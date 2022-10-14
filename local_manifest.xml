@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!-- Remotes -->
+    <remote name="KenHV" fetch="https://github.com/KenHV/" />
+    <remote name="grindklast" fetch="https://github.com/grindklast/" />
+    <remote name="wastingmylife" fetch="https://github.com/wastingmylife/" />
+
+<!-- Trees -->
+    <project path="device/xiaomi/vince"
+             name="android_device_xiaomi_vince"
+             remote="grindklast"
+             revision="lineage-17.1" />
+
+    <project path="vendor/xiaomi/vince"
+             name="android_vendor_xiaomi_vince"
+             remote="grindklast"
+             revision="havoc-10" />
+
+    <project path="kernel/xiaomi/vince"
+             name="kernel_xiaomi_vince"
+             remote="wastingmylife"
+             revision="stable" />
+
+<!-- CAF display HAL -->
+    <remove-project name="platform_hardware_qcom_display" />
+    <project path="hardware/qcom-caf/msm8996/display"
+             name="platform_hardware_qcom_display"
+             remote="KenHV"
+             revision="master" />
+
+<!-- CAF media HAL -->
+    <remove-project name="platform_hardware_qcom_media" />
+    <project path="hardware/qcom-caf/msm8996/media"
+             name="platform_hardware_qcom_media"
+             remote="KenHV"
+             revision="master" />
+
+</manifest>
