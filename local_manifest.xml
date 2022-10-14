@@ -23,14 +23,14 @@
              revision="stable" />
 
 <!-- CAF display HAL -->
-    <remove-project name="platform_hardware_qcom_display" />
+    <remove-project name="android_hardware_qcom_display" />
     <project path="hardware/qcom-caf/msm8996/display"
              name="platform_hardware_qcom_display"
              remote="KenHV"
              revision="master" />
 
 <!-- CAF media HAL -->
-    <remove-project name="platform_hardware_qcom_media" />
+    <remove-project name="android_hardware_qcom_media" />
     <project path="hardware/qcom-caf/msm8996/media"
              name="platform_hardware_qcom_media"
              remote="KenHV"
