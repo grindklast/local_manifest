@@ -2,9 +2,9 @@
 <manifest>
 
 <!-- Remotes -->
-    <remote name="KenHV" fetch="https://github.com/KenHV/" />
-    <remote name="grindklast" fetch="https://github.com/grindklast/" />
-    <remote name="wastingmylife" fetch="https://github.com/wastingmylife/" />
+    <remote name="KenHV" fetch="https://github.com/KenHV" />
+    <remote name="grindklast" fetch="https://github.com/grindklast" />
+    <remote name="wastingmylife" fetch="https://github.com/wastingmylife" />
 
 <!-- Trees -->
     <project path="device/xiaomi/vince"
@@ -20,17 +20,18 @@
     <project path="kernel/xiaomi/vince"
              name="kernel_xiaomi_vince"
              remote="wastingmylife"
+             clone-depth="1"
              revision="stable" />
 
 <!-- CAF display HAL -->
-    <remove-project name="android_hardware_qcom_display" />
+    <remove-project name="LineageOS/android_hardware_qcom_display" />
     <project path="hardware/qcom-caf/msm8996/display"
              name="platform_hardware_qcom_display"
              remote="KenHV"
              revision="master" />
 
 <!-- CAF media HAL -->
-    <remove-project name="android_hardware_qcom_media" />
+    <remove-project name="LineageOS/android_hardware_qcom_media" />
     <project path="hardware/qcom-caf/msm8996/media"
              name="platform_hardware_qcom_media"
              remote="KenHV"
